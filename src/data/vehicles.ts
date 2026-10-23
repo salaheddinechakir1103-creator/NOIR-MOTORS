@@ -1,3 +1,7 @@
+import asset0 from '../assets/images/experience_atlas_drive_1792768237978.jpg';
+import asset1 from '../assets/images/hero_marrakech_palmeraie_1792768235408.jpg';
+import asset2 from '../assets/images/showroom_morocco_lounge_1792768237075.jpg';
+import asset3 from '../assets/images/service_vip_chauffeur_1792768236202.jpg';
 import { Vehicle, BookingExtra, Booking } from '../types';
 
 export const INITIAL_VEHICLES: Vehicle[] = [
@@ -20,10 +24,10 @@ export const INITIAL_VEHICLES: Vehicle[] = [
     availableCities: ['Casablanca', 'Marrakech', 'Rabat', 'Tanger'],
     status: 'Disponible',
     badge: 'Coup de Cœur',
-    image: '/src/assets/images/experience_atlas_drive_1792768237978.jpg',
+    image: asset0,
     gallery: [
-      '/src/assets/images/experience_atlas_drive_1792768237978.jpg',
-      '/src/assets/images/hero_marrakech_palmeraie_1792768235408.jpg'
+      asset0,
+      asset1
     ],
     colorsAvailable: [
       { name: 'Rosso Corsa', hex: '#d40000' },
@@ -57,10 +61,10 @@ export const INITIAL_VEHICLES: Vehicle[] = [
     availableCities: ['Marrakech', 'Casablanca', 'Tanger'],
     status: 'Disponible',
     badge: 'Exclusivité',
-    image: '/src/assets/images/hero_marrakech_palmeraie_1792768235408.jpg',
+    image: asset1,
     gallery: [
-      '/src/assets/images/hero_marrakech_palmeraie_1792768235408.jpg',
-      '/src/assets/images/showroom_morocco_lounge_1792768237075.jpg'
+      asset1,
+      asset2
     ],
     colorsAvailable: [
       { name: 'Papaya Spark', hex: '#ff6700' },
@@ -94,10 +98,10 @@ export const INITIAL_VEHICLES: Vehicle[] = [
     availableCities: ['Casablanca', 'Marrakech', 'Rabat'],
     status: 'Disponible',
     badge: 'Exclusivité',
-    image: '/src/assets/images/service_vip_chauffeur_1792768236202.jpg',
+    image: asset3,
     gallery: [
-      '/src/assets/images/service_vip_chauffeur_1792768236202.jpg',
-      '/src/assets/images/showroom_morocco_lounge_1792768237075.jpg'
+      asset3,
+      asset2
     ],
     colorsAvailable: [
       { name: 'Obsidian Black', hex: '#0a0a0c' },
@@ -130,10 +134,10 @@ export const INITIAL_VEHICLES: Vehicle[] = [
     availableCities: ['Casablanca', 'Marrakech', 'Tanger', 'Agadir'],
     status: 'Disponible',
     badge: 'Nouveauté',
-    image: '/src/assets/images/experience_atlas_drive_1792768237978.jpg',
+    image: asset0,
     gallery: [
-      '/src/assets/images/experience_atlas_drive_1792768237978.jpg',
-      '/src/assets/images/hero_marrakech_palmeraie_1792768235408.jpg'
+      asset0,
+      asset1
     ],
     colorsAvailable: [
       { name: 'Arancio Xanto', hex: '#e64900' },
@@ -167,9 +171,9 @@ export const INITIAL_VEHICLES: Vehicle[] = [
     availableCities: ['Casablanca', 'Marrakech', 'Rabat'],
     status: 'Disponible',
     badge: 'Exclusivité',
-    image: '/src/assets/images/experience_atlas_drive_1792768237978.jpg',
+    image: asset0,
     gallery: [
-      '/src/assets/images/experience_atlas_drive_1792768237978.jpg'
+      asset0
     ],
     colorsAvailable: [
       { name: 'Blanc GT & Rouge Pyros', hex: '#f0f0f2' },
@@ -202,10 +206,10 @@ export const INITIAL_VEHICLES: Vehicle[] = [
     availableCities: ['Casablanca', 'Marrakech', 'Rabat', 'Tanger', 'Agadir'],
     status: 'Disponible',
     badge: 'Coup de Cœur',
-    image: '/src/assets/images/service_vip_chauffeur_1792768236202.jpg',
+    image: asset3,
     gallery: [
-      '/src/assets/images/service_vip_chauffeur_1792768236202.jpg',
-      '/src/assets/images/showroom_morocco_lounge_1792768237075.jpg'
+      asset3,
+      asset2
     ],
     colorsAvailable: [
       { name: 'Noir Mat Magno', hex: '#18181b' },
@@ -238,9 +242,9 @@ export const INITIAL_VEHICLES: Vehicle[] = [
     availableCities: ['Casablanca', 'Marrakech', 'Tanger'],
     status: 'Disponible',
     badge: 'Nouveauté',
-    image: '/src/assets/images/hero_marrakech_palmeraie_1792768235408.jpg',
+    image: asset1,
     gallery: [
-      '/src/assets/images/hero_marrakech_palmeraie_1792768235408.jpg'
+      asset1
     ],
     colorsAvailable: [
       { name: 'Giallo Auge', hex: '#eab308' },
@@ -272,9 +276,9 @@ export const INITIAL_VEHICLES: Vehicle[] = [
     luggageCount: 3,
     availableCities: ['Casablanca', 'Rabat', 'Tanger'],
     status: 'Disponible',
-    image: '/src/assets/images/showroom_morocco_lounge_1792768237075.jpg',
+    image: asset2,
     gallery: [
-      '/src/assets/images/showroom_morocco_lounge_1792768237075.jpg'
+      asset2
     ],
     colorsAvailable: [
       { name: 'British Racing Green', hex: '#0f3823' },
@@ -306,9 +310,9 @@ export const INITIAL_VEHICLES: Vehicle[] = [
     luggageCount: 2,
     availableCities: ['Casablanca', 'Marrakech'],
     status: 'Disponible',
-    image: '/src/assets/images/experience_atlas_drive_1792768237978.jpg',
+    image: asset0,
     gallery: [
-      '/src/assets/images/experience_atlas_drive_1792768237978.jpg'
+      asset0
     ],
     colorsAvailable: [
       { name: 'Hyper Red', hex: '#b91c1c' },
@@ -340,9 +344,9 @@ export const INITIAL_VEHICLES: Vehicle[] = [
     luggageCount: 2,
     availableCities: ['Casablanca', 'Marrakech', 'Rabat'],
     status: 'Disponible',
-    image: '/src/assets/images/hero_marrakech_palmeraie_1792768235408.jpg',
+    image: asset1,
     gallery: [
-      '/src/assets/images/hero_marrakech_palmeraie_1792768235408.jpg'
+      asset1
     ],
     colorsAvailable: [
       { name: 'Grigio Silverstone', hex: '#4b5563' },
@@ -374,9 +378,9 @@ export const INITIAL_VEHICLES: Vehicle[] = [
     luggageCount: 3,
     availableCities: ['Casablanca', 'Marrakech', 'Rabat', 'Tanger'],
     status: 'Disponible',
-    image: '/src/assets/images/showroom_morocco_lounge_1792768237075.jpg',
+    image: asset2,
     gallery: [
-      '/src/assets/images/showroom_morocco_lounge_1792768237075.jpg'
+      asset2
     ],
     colorsAvailable: [
       { name: 'Noir Intense Métallisé', hex: '#0f1013' },
@@ -408,9 +412,9 @@ export const INITIAL_VEHICLES: Vehicle[] = [
     luggageCount: 5,
     availableCities: ['Casablanca', 'Marrakech', 'Rabat', 'Tanger', 'Agadir'],
     status: 'Disponible',
-    image: '/src/assets/images/service_vip_chauffeur_1792768236202.jpg',
+    image: asset3,
     gallery: [
-      '/src/assets/images/service_vip_chauffeur_1792768236202.jpg'
+      asset3
     ],
     colorsAvailable: [
       { name: 'Santorini Black', hex: '#111216' },
@@ -442,9 +446,9 @@ export const INITIAL_VEHICLES: Vehicle[] = [
     luggageCount: 1,
     availableCities: ['Marrakech', 'Casablanca'],
     status: 'Disponible',
-    image: '/src/assets/images/hero_marrakech_palmeraie_1792768235408.jpg',
+    image: asset1,
     gallery: [
-      '/src/assets/images/hero_marrakech_palmeraie_1792768235408.jpg'
+      asset1
     ],
     colorsAvailable: [
       { name: 'Acquamarina', hex: '#0ea5e9' },
@@ -476,9 +480,9 @@ export const INITIAL_VEHICLES: Vehicle[] = [
     luggageCount: 3,
     availableCities: ['Casablanca', 'Rabat', 'Tanger'],
     status: 'Disponible',
-    image: '/src/assets/images/showroom_morocco_lounge_1792768237075.jpg',
+    image: asset2,
     gallery: [
-      '/src/assets/images/showroom_morocco_lounge_1792768237075.jpg'
+      asset2
     ],
     colorsAvailable: [
       { name: 'Frozen Marina Bay Blue', hex: '#1d4ed8' },
@@ -510,9 +514,9 @@ export const INITIAL_VEHICLES: Vehicle[] = [
     luggageCount: 5,
     availableCities: ['Casablanca', 'Marrakech', 'Rabat', 'Tanger'],
     status: 'Disponible',
-    image: '/src/assets/images/experience_atlas_drive_1792768237978.jpg',
+    image: asset0,
     gallery: [
-      '/src/assets/images/experience_atlas_drive_1792768237978.jpg'
+      asset0
     ],
     colorsAvailable: [
       { name: 'Gris Nardo', hex: '#64748b' },
@@ -545,10 +549,10 @@ export const INITIAL_VEHICLES: Vehicle[] = [
     availableCities: ['Casablanca', 'Marrakech', 'Rabat'],
     status: 'Disponible',
     badge: 'Exclusivité',
-    image: '/src/assets/images/service_vip_chauffeur_1792768236202.jpg',
+    image: asset3,
     gallery: [
-      '/src/assets/images/service_vip_chauffeur_1792768236202.jpg',
-      '/src/assets/images/showroom_morocco_lounge_1792768237075.jpg'
+      asset3,
+      asset2
     ],
     colorsAvailable: [
       { name: 'Bicolore Noir Obsidienne & Argent High-Tech', hex: '#1e293b' },
@@ -608,7 +612,7 @@ export const INITIAL_BOOKINGS: Booking[] = [
     referenceCode: 'NOIR-2026-8812',
     vehicleId: 'ferrari-f8-tributo',
     vehicleName: 'Ferrari F8 Tributo',
-    vehicleImage: '/src/assets/images/experience_atlas_drive_1792768237978.jpg',
+    vehicleImage: asset0,
     customerName: 'Yassine Benjelloun',
     customerEmail: 'y.benjelloun@finance.ma',
     customerPhone: '+212 661 14 25 36',
@@ -633,7 +637,7 @@ export const INITIAL_BOOKINGS: Booking[] = [
     referenceCode: 'NOIR-2026-8813',
     vehicleId: 'rolls-royce-cullinan',
     vehicleName: 'Rolls-Royce Cullinan Black Badge',
-    vehicleImage: '/src/assets/images/service_vip_chauffeur_1792768236202.jpg',
+    vehicleImage: asset3,
     customerName: 'Kenza Tazi El Alami',
     customerEmail: 'kenza.tazi@groupealami.com',
     customerPhone: '+212 662 48 90 12',
@@ -658,7 +662,7 @@ export const INITIAL_BOOKINGS: Booking[] = [
     referenceCode: 'NOIR-2026-8814',
     vehicleId: 'porsche-911-gt3-rs',
     vehicleName: 'Porsche 911 GT3 RS (992)',
-    vehicleImage: '/src/assets/images/experience_atlas_drive_1792768237978.jpg',
+    vehicleImage: asset0,
     customerName: 'Marc Delvaux',
     customerEmail: 'm.delvaux@luxaviation.ch',
     customerPhone: '+41 79 450 82 11',
