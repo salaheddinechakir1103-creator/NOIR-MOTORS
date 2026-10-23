@@ -59,3 +59,34 @@
     linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
 }
+
+/* NOIR MOTORS — phone-only cinematic preview. Desktop unchanged. */
+@media (max-width: 639px) {
+  html { -webkit-text-size-adjust: 100%; }
+  body { overflow-x: clip; }
+  .noir-mobile-hero { height: 80svh; min-height: 590px; max-height: 850px; }
+  /* On phones the film is the focal point; keep controls, not the editorial overlay. */
+  .noir-mobile-hero > .absolute.top-8 { display: none; }
+  .noir-mobile-hero > .absolute.bottom-6 { bottom: 10px; }
+  .noir-mobile-hero > .absolute.bottom-6 > div { padding-left: 10px; padding-right: 10px; }
+  .noir-mobile-hero > .absolute.bottom-6 > div > div { padding: 8px; gap: 7px; border-radius: 8px; }
+  .noir-mobile-hero > .absolute.bottom-6 .text-xs { font-size: 9px; }
+  .noir-mobile-hero > .absolute.bottom-6 .text-\\[11px\\] { font-size: 9px; }
+  .noir-mobile-hero > .absolute.bottom-6 .w-10 { width: 28px; height: 28px; }
+  .noir-mobile-hero > .absolute.bottom-6 .flex.items-center.gap-3 { gap: 6px; }
+  .noir-mobile-hero > .absolute.bottom-6 .flex.items-center.gap-2 { flex-wrap: wrap; gap: 3px; }
+  .noir-featured { padding-top: 44px; padding-bottom: 50px; padding-left: 12px; padding-right: 12px; }
+  .noir-featured > .grid { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 10px; }
+  .noir-featured h2 { font-size: 24px; }
+  .noir-featured .mb-12 { margin-bottom: 20px; }
+  .noir-featured .group .p-5 { padding: 9px; }
+  .noir-featured .group h3 { font-size: 13px; line-height: 1.2; }
+  .noir-featured .group .text-xs { font-size: 9px; }
+  .noir-featured .group .text-xl { font-size: 14px; }
+  .noir-featured .group .grid-cols-3 { gap: 3px; margin-top: 8px; margin-bottom: 8px; }
+  .noir-featured .group .grid-cols-3 .text-\\[11px\\] { font-size: 8px; }
+  .noir-featured .group .absolute.top-3 { top: 6px; }
+  .noir-featured .group .absolute.right-3 { right: 6px; }
+  .noir-featured .group .absolute.left-3 { left: 6px; }
+  .noir-featured .group .absolute.top-3 button { padding: 5px; }
+}
