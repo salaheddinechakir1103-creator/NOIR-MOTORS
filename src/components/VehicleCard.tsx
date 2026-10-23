@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { INITIAL_VEHICLES } from '../data/vehicles';
 import { Vehicle } from '../types';
 import { useApp } from '../context/AppContext';
 import { Heart, Scale, Gauge, Zap, Users, ArrowUpRight } from 'lucide-react';
@@ -11,6 +12,7 @@ interface VehicleCardProps {
 
 export const VehicleCard: React.FC<VehicleCardProps> = ({ vehicle, onSelect, onBook }) => {
   const { favorites, toggleFavorite, compareList, toggleCompare } = useApp();
+  const [imageFailed, setImageFailed] = useState(false);
   const isFav = favorites.includes(vehicle.id);
   const isCompared = compareList.includes(vehicle.id);
 
@@ -19,13 +21,14 @@ export const VehicleCard: React.FC<VehicleCardProps> = ({ vehicle, onSelect, onB
       {/* Top Media Area */}
       <div className="relative aspect-[16/10] overflow-hidden bg-black/60">
         <img
-          src={vehicle.image}
+          src={imageFailed ? (INITIAL_VEHICLES.find(v => v.id === vehicle.id)?.image || vehicle.gallery?.[0] || '') : vehicle.image}
           alt={vehicle.name}
           referrerPolicy="no-referrer"
           className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
           onError={(e) => {
-            // High-res fallback container if necessary
-            (e.target as HTMLImageElement).src = vehicle.image;
+            // Switch once to the bundled image instead of retrying the same broken URL.
+            if (!imageFailed) setImageFailed(true);
+            else (e.currentTarget as HTMLImageElement).style.opacity = '0';
           }}
         />
 
