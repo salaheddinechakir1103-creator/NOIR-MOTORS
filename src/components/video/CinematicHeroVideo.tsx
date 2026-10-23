@@ -1,3 +1,4 @@
+import noirPageImage0 from '../../assets/images/video_shot_headlight_lens_1792769612084.jpg';
 import React, { useRef, useState, useEffect } from 'react';
 import { Play, Pause, Volume2, VolumeX, Eye, Sparkles, Film, Compass, Box } from 'lucide-react';
 
@@ -114,7 +115,7 @@ export const CinematicHeroVideo: React.FC<CinematicHeroVideoProps> = ({
           setVideoLoaded(true);
           if (videoRef.current) setDuration(videoRef.current.duration || 12.2);
         }}
-        poster="/src/assets/images/video_shot_headlight_lens_1792769612084.jpg"
+        poster={noirPageImage0}
         className="absolute inset-0 w-full h-full object-cover object-center scale-[1.01] transition-opacity duration-1000"
       />
 
