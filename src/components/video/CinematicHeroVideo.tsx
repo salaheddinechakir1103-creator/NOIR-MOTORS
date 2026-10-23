@@ -99,7 +99,7 @@ export const CinematicHeroVideo: React.FC<CinematicHeroVideoProps> = ({
   };
 
   return (
-    <div className="relative w-full h-[90vh] min-h-[660px] max-h-[940px] bg-black overflow-hidden select-none">
+    <div className="noir-mobile-hero relative w-full h-[90vh] min-h-[660px] max-h-[940px] bg-black overflow-hidden select-none">
       {/* 1. ACTUAL CINEMATIC 3D MP4 VIDEO (Full-screen, Autoplay, Loop, Muted) */}
       <video
         ref={videoRef}
