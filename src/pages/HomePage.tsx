@@ -1,3 +1,6 @@
+import noirPageImage0 from '../assets/images/service_vip_chauffeur_1792768236202.jpg';
+import noirPageImage1 from '../assets/images/hero_marrakech_palmeraie_1792768235408.jpg';
+import noirPageImage2 from '../assets/images/showroom_morocco_lounge_1792768237075.jpg';
 import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
 import { CinematicHeroVideo } from '../components/video/CinematicHeroVideo';
@@ -347,7 +350,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenBooking })
           {/* High-res Moroccan imagery showcasing the Rolls-Royce chauffeur service */}
           <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl aspect-[4/3]">
             <img
-              src="/src/assets/images/service_vip_chauffeur_1792768236202.jpg"
+              src={noirPageImage0}
               alt="Service Chauffeur VIP Casablanca"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover"
@@ -383,7 +386,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenBooking })
           {/* Tile 1: Villa Palmeraie Marrakech */}
           <div className="relative rounded-2xl overflow-hidden border border-white/10 aspect-[16/10] group">
             <img
-              src="/src/assets/images/hero_marrakech_palmeraie_1792768235408.jpg"
+              src={noirPageImage1}
               alt="Villa Marrakech Palmeraie Supercar"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
@@ -400,7 +403,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenBooking })
           {/* Tile 2: VIP Lounge Casablanca */}
           <div className="relative rounded-2xl overflow-hidden border border-white/10 aspect-[16/10] group">
             <img
-              src="/src/assets/images/showroom_morocco_lounge_1792768237075.jpg"
+              src={noirPageImage2}
               alt="Salon VIP Casablanca Anfa"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
