@@ -42,7 +42,23 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const [vehicles, setVehicles] = useState<Vehicle[]>(() => {
     try {
       const stored = localStorage.getItem(STORAGE_KEYS.VEHICLES);
-      return stored ? JSON.parse(stored) : INITIAL_VEHICLES;
+      if (!stored) return INITIAL_VEHICLES;
+      const saved = JSON.parse(stored) as Vehicle[];
+      if (!Array.isArray(saved)) return INITIAL_VEHICLES;
+      const defaultsById = new Map(INITIAL_VEHICLES.map(v => [v.id, v]));
+      // Migrate legacy Vite source URLs without overwriting user-added vehicles or admin edits.
+      return saved.map(vehicle => {
+        const current = defaultsById.get(vehicle.id);
+        if (!current) return vehicle;
+        const broken = (url: string | undefined) => !url || url.startsWith('/src/assets/') || url.includes('/src/assets/');
+        return {
+          ...vehicle,
+          image: broken(vehicle.image) ? current.image : vehicle.image,
+          gallery: (vehicle.gallery || []).map((url, index) =>
+            broken(url) ? (current.gallery[index] || current.image) : url
+          ),
+        };
+      });
     } catch {
       return INITIAL_VEHICLES;
     }
