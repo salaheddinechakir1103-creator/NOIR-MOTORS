@@ -1,3 +1,6 @@
+import noirPageImage0 from '../assets/images/service_vip_chauffeur_1792768236202.jpg';
+import noirPageImage1 from '../assets/images/hero_marrakech_palmeraie_1792768235408.jpg';
+import noirPageImage2 from '../assets/images/experience_atlas_drive_1792768237978.jpg';
 import React from 'react';
 import { 
   ShieldCheck, 
@@ -75,7 +78,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigate }) => {
         <div className="lg:col-span-6">
           <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl aspect-[16/10]">
             <img
-              src="/src/assets/images/service_vip_chauffeur_1792768236202.jpg"
+              src={noirPageImage0}
               alt="Service Chauffeur Privé Rolls Royce"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover"
@@ -89,7 +92,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigate }) => {
         <div className="lg:col-span-6 order-2 lg:order-1">
           <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl aspect-[16/10]">
             <img
-              src="/src/assets/images/hero_marrakech_palmeraie_1792768235408.jpg"
+              src={noirPageImage1}
               alt="Livraison Villa Marrakech"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover"
@@ -164,7 +167,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigate }) => {
         <div className="lg:col-span-6">
           <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl aspect-[16/10]">
             <img
-              src="/src/assets/images/experience_atlas_drive_1792768237978.jpg"
+              src={noirPageImage2}
               alt="Roadtrip Atlas Supercar"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover"
