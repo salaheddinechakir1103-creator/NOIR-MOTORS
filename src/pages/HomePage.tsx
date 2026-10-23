@@ -242,7 +242,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenBooking })
       {/* ========================================================
           FEATURED COLLECTION: "LA SÉLECTION MAÎTRESSE"
           ======================================================== */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
+      <section className="noir-featured max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
           <div>
             <div className="text-xs uppercase tracking-[0.2em] text-orange-400 font-semibold mb-2">
