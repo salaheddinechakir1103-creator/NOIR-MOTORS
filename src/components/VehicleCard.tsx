@@ -15,7 +15,7 @@ export const VehicleCard: React.FC<VehicleCardProps> = ({ vehicle, onSelect, onB
   const isCompared = compareList.includes(vehicle.id);
 
   return (
-    <div className="group relative bg-[#0d0e12] border border-white/[0.08] hover:border-orange-500/50 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.6)] flex flex-col justify-between">
+    <div className="noir-vehicle-card group relative bg-[#0d0e12] border border-white/[0.08] hover:border-orange-500/50 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.6)] flex flex-col justify-between">
       {/* Top Media Area */}
       <div className="relative aspect-[16/10] overflow-hidden bg-black/60">
         <img
@@ -25,7 +25,7 @@ export const VehicleCard: React.FC<VehicleCardProps> = ({ vehicle, onSelect, onB
           className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
           onError={(e) => {
             // High-res fallback container if necessary
-            (e.target as HTMLImageElement).src = '/src/assets/images/hero_marrakech_palmeraie_1792768235408.jpg';
+            (e.target as HTMLImageElement).src = vehicle.image;
           }}
         />
 
