@@ -1,0 +1,6 @@
+{
+  "name": "Noir Motors - Location de Supercars au Maroc",
+  "description": "Noir Motors : L'excellence de la location de voitures de luxe et supercars au Maroc. Expérience 3D interactive, flotte prestigieuse à Casablanca, Marrakech, Rabat et Tanger.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
